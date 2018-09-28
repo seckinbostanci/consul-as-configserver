@@ -1,15 +1,11 @@
 spring:
-    application:
-        name: demo
     cloud:
         consul:
             config:
                 fail-fast: true
                 enabled: true
                 prefix: config
-                defaultContext: application
-                data-key: data
-                profileSeparator: '::'
+                defaultContext: demo-service
+                data-key: application-yml
+                profileSeparator: ':::'
                 format: yaml
-            host: localhost
-            port: 8500
